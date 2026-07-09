@@ -2,7 +2,7 @@ package com.example.security.logincontroller;
 
 
 import jakarta.servlet.http.HttpServletRequest;
-import org.springframework.security.web.csrf.CsrfToken;
+//import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,9 +21,9 @@ public class LoginController {
 
     }
 
-    @GetMapping("/csrftoken")
-    public CsrfToken csrf(HttpServletRequest request) {
-        return (CsrfToken)request.getAttribute("_csrf");
-    }
+//    @GetMapping("/csrftoken")
+//    public CsrfToken csrf(HttpServletRequest request) {
+//        return (CsrfToken)request.getAttribute("_csrf");
+//    }
 
 }
